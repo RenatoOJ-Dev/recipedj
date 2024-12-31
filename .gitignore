@@ -89,12 +89,17 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+**/.mypy_cache/
+.mypy_cache/
+.mypy_cache/*.json
+.mypy_cache/*.data
+mypy.ini
 
 # Sublime Text #
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
-*.sublime-workspace
+*.sublime-workspacea
 *.sublime-project
 
 # sftp configuration file
@@ -128,4 +133,3 @@ gunicorn-error-log
 db.sqlite3
 db copy.sqlite3
 static/
-
