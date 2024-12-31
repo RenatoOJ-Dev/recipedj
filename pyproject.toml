@@ -4,12 +4,22 @@ version = "0.1.0"
 description = ""
 authors = ["Renato <renato.j.olveira@gmail.com>"]
 readme = "README.md"
+packages = [
+    { include = "project_django" }
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.11"
 django = "^5.1.4"
 
 
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.14.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+
